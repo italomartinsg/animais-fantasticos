@@ -6,7 +6,7 @@ export default class TabNav {
   }
 
   // Ativa a tab de acordo com index da mesma
- activeTab(index) {
+  activeTab(index) {
     this.tabContent.forEach((section) => {
       section.classList.remove(this.activeClass);
     });
@@ -15,7 +15,7 @@ export default class TabNav {
   }
 
   // Adiciona os eventos nas tabs
-  addTabNavEvent(){
+  addTabNavEvent() {
     this.tabMenu.forEach((itemMenu, index) => {
       itemMenu.addEventListener('click', () => this.activeTab(index));
     });
@@ -27,5 +27,6 @@ export default class TabNav {
       this.activeTab(0);
       this.addTabNavEvent();
     }
-  }  
+    return this;
+  }
 }
