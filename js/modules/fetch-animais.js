@@ -1,4 +1,4 @@
-import AnimaNumeros from '../../animaisapi.json';
+import AnimaNumeros from '../../../animais-fantasticos/animaisapi.json';
 
 export default function fetchAnimais(url, target) {
   // Cria a div contendo informações com o total de animais
